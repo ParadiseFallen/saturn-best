@@ -9,15 +9,17 @@ export default {
         "styles": `${srcFolder}/styles`,
         "scripts": `${srcFolder}/scripts`,
         "img": `${srcFolder}/img`,
-        "fonts": `${srcFolder}/fonts/*.ttf`
+        "fonts": `${srcFolder}/fonts/*.ttf`,
+        "resources" : `${srcFolder}/resources`
     },
     "build": {
         "folder": buildFolder,
-        "pages": `${buildFolder}`,
+        "pages": `${buildFolder}/pages`,
         "styles": `${buildFolder}/styles`,
         "scripts": `${buildFolder}/scripts`,
         "img": `${buildFolder}/img`,
-        "fonts": `${buildFolder}/fonts`
+        "fonts": `${buildFolder}/fonts`,
+        "resources": `${buildFolder}/resources`
     },
     "clean": buildFolder
 }

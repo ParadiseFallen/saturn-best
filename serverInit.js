@@ -4,6 +4,7 @@ import browserSync from 'browser-sync'
 export default () =>
     browserSync.init({
         server : {
-            baseDir : `${fileMap.build.pages}`
+            baseDir : `${fileMap.build.folder}`,
+            index : "pages/index.html"
         }
     })

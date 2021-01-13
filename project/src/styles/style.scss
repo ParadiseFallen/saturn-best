@@ -6,5 +6,73 @@
 *
 {
     box-sizing: border-box;
-    // color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
+a
+{
+    text-decoration: none;
+}
+.w-fit-content
+{
+    width: fit-content;
+}
+
+header
+{
+    .phones
+    {
+        font-weight: 700;
+        font-size: 24px;
+        a
+        {
+            color: $main-black;
+        }
+    }
+    
+    .socials
+    {
+        
+        .social
+        {
+            i
+            {
+                color: $main-red;
+                font-size: 36px;
+                transition: color .3s linear;
+            }
+
+            border-left: $main-red 1px solid;
+            transition: background .3s linear;
+
+            &:last-child
+            {
+                border-right: $main-red 1px solid;
+            }
+
+            &:hover
+            {
+                background: $main-red;
+                i
+                {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .subheader
+    {
+        background: $main-red;
+        .nav-link
+        {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            &:hover
+            {
+                background: #fff;
+                color: $main-red;
+            }
+        }
+    }
+}
+

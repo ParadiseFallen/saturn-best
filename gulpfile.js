@@ -47,6 +47,11 @@ task('filemap', async () => {
     console.log(fileMap)
 })
 
+task('build-resources', (done) => {
+    src(`${fileMap.src.resources}/**/*.*`).pipe(cache(dest(fileMap.build.resources)))
+    done()
+})
+
 //#region BUILD
 
 // * Build development 
@@ -72,7 +77,8 @@ task('build-styles', () => {
         .pipe(mediaGroup())
         .pipe(pipeIf(isReleaseBuild, cleanCss(),
             cleanCss({
-                "format": "beautify"
+                "format": "keep-breaks",
+                "inlineRequest" : true 
             })))
         .pipe(gulpIf(!isReleaseBuild, sourcemaps.write('./')))
         .pipe(dest(fileMap.build.styles))
@@ -100,7 +106,7 @@ task('build-fonts', () =>
         .pipe(browserSync.stream())
 
 )
-task('default', parallel('build-styles', 'build-pages', 'build-scripts', 'build-img'))
+task('default', parallel('build-styles', 'build-pages', 'build-scripts', 'build-img', 'build-resources'))
 //#endregion
 
 //#region Watch
@@ -110,18 +116,19 @@ task('watch-styles', () =>
     watch(`${fileMap.src.styles}/**/*.+(scss|sass)`, series('build-styles')))
 
 // * Watch only pages .pug .html files
-task('watch-pages', () => 
+task('watch-pages', () =>
     watch(`${fileMap.src.pages}/**/*.+(html|pug)`, series('build-pages')))
 // * Watch only pages .pug .html files
-task('watch-scripts', () => 
+task('watch-scripts', () =>
     watch(`${fileMap.src.scripts}/**/*.+(js|ts)`, series('build-scripts')))
 // * Watch only pages .pug .html files
-task('watch-img', () => 
+task('watch-img', () =>
     watch(`${fileMap.src.img}/**/*.+(png|jpg|gif|ico|svg|webp)`, series('build-img')))
 
 // * Watch only pages .pug .html files
-task('watch-fonts', () => 
+task('watch-fonts', () =>
     watch(`${fileMap.src.fonts}/**/*`, series('build-fonts')))
+
 
 task('live-server', serverInit)
 
