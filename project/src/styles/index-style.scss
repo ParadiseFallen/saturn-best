@@ -1,0 +1,133 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+@import "_fonts";
+
+#first-screen
+{
+    p
+    {
+        color: $main-red;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    h1
+    {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    span
+    {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .carousel-inner
+    {
+        border-radius: 50%;
+        box-shadow: -10px -10px 1px 1px $main-red;
+        img
+        {
+            height: 635px;
+        }
+    }
+    .carousel-indicators li 
+    {
+        width: 20px;
+        position: relative;
+        height: 20px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 3px solid $main-red;
+        opacity: 1;
+    }
+    .carousel-indicators li.active
+    {
+        background: $main-red;
+    }
+
+    
+}
+
+#why
+{
+    .card-container
+    {
+        .card
+        {
+            padding: 0 0 20px 20px;
+            border: none;
+            filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+            border-radius: 15px;
+            .card-img
+            {
+                background: $main-red;
+                border-radius: 0 15px 0 85%;
+            }
+            h3
+            {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            p
+            {
+                font-size: 18px;
+            }
+            &-inverted
+            {
+                background: $main-red;
+                color: #fff;
+                .card-img
+                {
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+#replacement
+{
+    table
+    {
+        font-size: 18px;
+        text-align: center;
+        tr
+        {
+            th:first-child,
+            td:first-child
+            {
+                background: $main-red;
+                color: #fff;
+            }
+            th:first-child
+            {
+                border-radius: 10px 0 0 0 ;
+            }
+            td:nth-child(2),
+            th:nth-child(2)
+            {
+                border-right: $main-red 1px solid;
+            }
+            &:last-child
+            {
+                td:first-child
+                {
+                    border-radius: 0 0 0 10px;
+                }
+            }
+            td:not()
+            {
+
+            }
+            &:first-child
+            {
+                border-top: $main-red 1px solid;
+            }
+            &:last-child
+            {
+                border-bottom: $main-red 1px solid;
+            }
+        }
+    }
+    
+}

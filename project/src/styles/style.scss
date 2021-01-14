@@ -16,19 +16,41 @@ a
 {
     width: fit-content;
 }
-
+.red-btn
+{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: $main-red 3px solid;
+    color: $main-red;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 700;
+    transition: color .15s linear, background .15s linear;
+    &:hover
+    {
+        color: #fff;
+        background: $main-red;
+    }
+}
 header
 {
     .phones
     {
         font-weight: 700;
         font-size: 24px;
+        @media screen and (max-width: 900px) {
+            font-size: 18px;
+        }
         a
         {
             color: $main-black;
         }
     }
-    
+    button:focus
+    {
+        outline: none;
+        box-shadow: none !important;
+    }
     .socials
     {
         
@@ -39,6 +61,7 @@ header
                 color: $main-red;
                 font-size: 36px;
                 transition: color .3s linear;
+                padding: 0 10px;
             }
 
             border-left: $main-red 1px solid;
@@ -61,18 +84,76 @@ header
     }
     .subheader
     {
+        li
+        {
+            margin-left: 10px;
+            .socials
+            {
+                i
+                {
+                    color: #fff;
+                }
+            }
+        }
         background: $main-red;
         .nav-link
         {
             font-size: 24px;
             font-weight: 600;
-            color: #fff;
-            &:hover
+            color: #fff !important;
+            @media screen and (min-width: 992px) 
             {
-                background: #fff;
-                color: $main-red;
+                &:hover
+                {
+                    background: #fff !important;
+                    color: $main-red !important;
+                }
             }
+            
         }
     }
 }
 
+footer
+{
+    *
+    {
+        color: #fff;
+        font-size: 18px;
+        transition: color .3s linear;
+        a:hover
+        {
+            color: $main-black;
+            i
+            {
+                color: $main-black;
+            }
+        }
+    }
+    .main
+    {
+        background: $main-red;
+        .logo
+        {
+            background: #fff;
+            border-radius: 0px 0px 10px 10px;
+        }
+        i
+        {
+            font-size: 36px;
+        }
+    }
+    .socials
+    {
+
+    }
+    .subfooter
+    {
+        span
+        {
+            font-weight: 400;
+            color: #fff;
+        }
+        background: $main-gray;
+    }   
+}

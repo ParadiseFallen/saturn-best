@@ -22,7 +22,7 @@ import mediaGroup from 'gulp-group-css-media-queries'
 import cleanCss from 'gulp-clean-css'
 import stripComments from 'gulp-strip-comments'
 import clean from 'gulp-clean'
-import image from 'gulp-image'
+import image from 'gulp-imagemin'
 import rename from 'gulp-rename'
 import gulpIf from 'gulp-if'
 //* src => стартовая локация. src('./styles') далее использовать .pipe(plugin())
