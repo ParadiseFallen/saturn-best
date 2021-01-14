@@ -15,6 +15,9 @@
     {
         font-size: 48px;
         font-weight: 700;
+        @media screen and (max-width :576px) {
+            font-size: 28px;
+        }
     }
     span
     {
@@ -101,16 +104,52 @@
 }
 #replacement
 {
+    .equals
+    {
+        font-size: 80px;
+        line-height: 24px;
+        width: 50px;
+        color: $main-red;
+        letter-spacing: -15px;
+        transform: translateY(5px);
+        display: flex;
+    }
+    h1
+    {
+        font-weight: 700;
+        font-size: 40px;
+        @media screen and (max-width :576px) {
+            font-size: 36px;
+        }
+    }
+    h2
+    {
+        font-size: 24px;
+        font-weight: 700;
+    }
     table
     {
+
         font-size: 18px;
+        @media screen and (max-width :576px) {
+            font-size: 14px;
+        }
         text-align: center;
         // border-radius: 15px;
         // border-right: $main-red 1px solid;
         // z-index: 9;
-        transform: translateY(-10px);
+        transform: translateY(-30px);
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px 10px 0 0 ;
+
         tr
         {
+            &:first-child,
+            &:last-child
+            {
+                border-radius: 10px 0 0 0;
+            }
             th:first-child,
             td:first-child
             {
@@ -119,14 +158,11 @@
                 padding: 10px 0;
                 font-weight: 700;
             }
-            th:first-child
-            {
-                border-radius: 10px 0 0 0 ;
-            }
             td:not(:first-child),
             th:not(:first-child)
             {
                 border-right: $main-red 1px solid;
+                background: #fff;
             }
             &:last-child
             {
@@ -157,6 +193,18 @@
                 {
                     border-radius: 0 0 15px 0;
                 }
+            }
+            th:first-child
+            {
+                border-radius: 20px 0 0 0;
+            }
+            th:last-child
+            {
+                border-radius:  0  20px 0 0;
+            }
+            th:not(:first-child)
+            {
+                border-top:  $main-red 1px solid;
             }
         }
     }
