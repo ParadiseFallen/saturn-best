@@ -1,0 +1,83 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+
+.contact-card
+    {
+        &-img
+        {
+            img
+            {
+                border-radius: 50%;
+                box-shadow: -2px -2px $main-red, 0 1px 10px rgba(0, 0, 0, 0.15);
+                // background: $main-red;
+                padding: 14px;
+                @media screen and (max-width : 992px)
+                {
+                    padding: 0;
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+            }
+        }
+        h4
+        {
+            font-size: 28px;
+        }
+        a
+        {
+            font-size: 24px;
+            color: $main-black;
+            font-weight: 700;
+            transition: color .15s linear;
+            @media screen and (max-width : 992px)
+            {
+                font-size: 20px;
+            }
+            &:hover
+            {
+                color : $main-red;
+            }
+        }
+    }
+.big-card
+{
+    border: 2px solid $main-red;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    i
+    {
+        font-size: 36px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+    &-inverted
+    {
+        background: $main-red;
+        *
+        {
+            color : #fff;
+        }
+        a
+        {
+            color: #fff !important;
+            &:hover
+            {
+                color: $main-black !important;
+            }
+        }
+    }
+}
+#first-screen
+{
+    
+    .map
+    {
+        border: 2px solid $main-red;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}

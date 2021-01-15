@@ -1,0 +1,19 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+
+.galery
+{
+    // margin: 100px;kc
+    a
+    {
+        display: flex;
+        justify-content: center;
+        img
+        {
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+    }
+}

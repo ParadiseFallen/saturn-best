@@ -14,7 +14,7 @@
     <!-- #endregion -->
 
     <!-- #region Styles -->
-    @@include_once('./components/_global-head.html')
+    @@include('./components/_global-head.html')
     <link rel="stylesheet" href="./../styles/index-style.css">
     <!-- #endregion -->
 
@@ -22,7 +22,7 @@
 
 <body>
 
-    @@include_once('./components/_header.html')
+    @@include('./components/_header.html')
 
     <main>
         <section id="first-screen">
@@ -31,21 +31,23 @@
                     <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
                         <p>от завода производителя</p>
                         <h1>
-Композитная
-стеклопластиковая
-арматура, сетка
+                            Композитная
+                            стеклопластиковая
+                            арматура, сетка
                         </h1>
                         <span>Обеспечим быструю доставку партии любого размера</span>
                         <a href="#" class="red-btn my-5">Заказать</a>
                     </div>
                     <div class="col-md-6 col-12 d-none d-lg-block">
-                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade"
+                            data-bs-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
+                                </li>
                                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                             </ol>
-                            <div class="carousel-inner" >
+                            <div class="carousel-inner">
                                 <div class="carousel-item active" data-interval="1000">
                                     <img src="./../img/first-screen-1.svg" class="d-block w-100" alt="...">
                                 </div>
@@ -104,8 +106,8 @@
                                 <div class="row">
                                     <div class="col-8">
                                         <p>За вековой срок службы
-                                        теряет всего 20%
-                                        от изначальных показателей</p>
+                                            теряет всего 20%
+                                            от изначальных показателей</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +125,8 @@
                                 <div class="row">
                                     <div class="col-8">
                                         <p>Не подвержена внешним
-                                        воздействиям, следовательно
-                                        не коррозирует</p>
+                                            воздействиям, следовательно
+                                            не коррозирует</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,8 +144,8 @@
                                 <div class="row">
                                     <div class="col-8">
                                         <p>Легко поддаётся резке
-                                        циркулярной пилой
-                                        и связывается проволкой</p>
+                                            циркулярной пилой
+                                            и связывается проволкой</p>
                                     </div>
                                 </div>
                             </div>
@@ -161,8 +163,8 @@
                                 <div class="row">
                                     <div class="col-8">
                                         <p>В 9 раз легче стальной, это
-                                        сокращает затраты на
-                                        транспортировку</p>
+                                            сокращает затраты на
+                                            транспортировку</p>
                                     </div>
                                 </div>
                             </div>
@@ -180,8 +182,8 @@
                                 <div class="row">
                                     <div class="col-8">
                                         <p>Выше аналогичных
-                                        показателей стальной
-                                        арматуры в 2,5 раза</p>
+                                            показателей стальной
+                                            арматуры в 2,5 раза</p>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +214,7 @@
                         <table class="w-100">
                             <tr>
                                 <th>Диаметр,<br>
-                                мм</th>
+                                    мм</th>
                                 <th>Вес 1 пог. м в кг</th>
                                 <th>Кол-во пог. м в 1 <br> тонне</th>
                             </tr>
@@ -261,7 +263,7 @@
                     <div class="col-md-6 col-12 ">
                         <h2 class="my-3">Стальная арматура</h2>
                         <img src="./../img/table-2.svg" alt="" class="img-fluid w-100 invert-x">
-                        
+
                         <table class="w-100">
                             <tr>
                                 <th>Диаметр,<br>
@@ -314,18 +316,190 @@
                 </div>
             </div>
         </section>
+
+        <section id="benefits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-header">Преимущества
+                            стеклопластиковой арматуры</h1>
+                    </div>
+                </div>
+                <div class="row flex-wrap my-4">
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div
+                                class="card-title card-title-red card-title-label d-flex flex-column justify-content-center">
+                                <h2 class="m-0">Отсутствие коррозии</h2>
+                            </div>
+                            <p class="mr">Такой материал не подвергается химическим
+                                воздействиям, провоцирующим возникновение
+                                ржавчины и тому подобных повреждений.
+                                Примечательно, что данный вид арматуры не
+                                подвержен даже электромагнитной коррозии.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-title">
+                                <img src="./../img/benefits-1.svg" alt="" class="img-fluid">
+                            </div>
+                            <p class="mr">Множество крупных строительных компаний
+                                используют этот материал именно по причине его
+                                надёжности, а также из-за цены, что соответствует
+                                качеству. Вам не придётся переплачивать за
+                                восстановление конструкций от коррозии, что
+                                значительно сократит Ваши расходы.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div
+                                class="card-title card-title-shadow card-title-label d-flex flex-column justify-content-center">
+                                <h2 class="m-0">Экономия до 50%</h2>
+                            </div>
+                            <p class="mr">Как уже было упомянуто выше, цена композитной
+                                арматуры полностью соответствует её качеству. Более
+                                того, вы сможете сэкономить около 50% от той суммы,
+                                которую Вы бы потратили при покупке стальной
+                                арматуры. Кроме того, Вы значительно сэкономите
+                                при транспортировке, так как её вес и эластичность
+                                позволяет уместить большее количество материала.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-title">
+                                <img src="./../img/benefits-2.svg" alt="" class="img-fluid">
+                            </div>
+                            <p class="mr">Также экономия осуществляется и при самом монтаже
+                                арматуры, так как такие факторы, как вес и
+                                эластичность значительно влияют на скорость
+                                установки. Помимо того, затраты на электроэнергию
+                                при установке также значительно уменьшаются.
+                                Купить стеклопластиковую арматуру можно по цене
+                                от 1, 35 грн, это в половину дешевле металлического
+                                аналога!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join-us">
+            <div class="container">
+                <div class="row section-header-block">
+                    <div class="col-6 ">
+                        <h1>
+                            Приглашаем <br>
+                            к сотрудничеству!
+                        </h1>
+                        <p>
+                            офциальных диллеров
+                        </p>
+                        <a href="#" class="red-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits-2">
+            <div class="container my-5">
+                    <div class="row flex-wrap my-4">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-title card-title-red card-title-label d-flex flex-column justify-content-center">
+                                    <h2 class="m-0">Надежность</h2>
+                                </div>
+                                <p class="mr">Материал, который используется для изготовления
+                                композитной арматуры называется «стеклянный
+                                ровинг», который, в свою очередь, изготовляется на
+                                основе эпоксидной смолы, которая сама по себе
+                                является достаточно прочным материалом и очень
+                                часто используется в строительстве. Такой фактор
+                                свидетельствует о том, что стеклопластиковая
+                                арматура превышает даже прочность металлической!
+</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    <img src="./../img/benefits-3.svg" alt="" class="img-fluid">
+                                </div>
+                                <p class="mr">Наличие термоактивной смолы обеспечивает защиту
+                                материала от внешних воздействий, провоцирующих
+                                коррозию. А такой материал, как стеклянное волокно
+                                делает арматуру прочнее и эластичнее. Именно по
+                                этим причинам её используют даже при сооружении
+                                мостов, дорог и прочих больших сооружений,
+                                требующих высокой износостойкости.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-title card-title-shadow card-title-label d-flex flex-column justify-content-center">
+                                    <h2 class="m-0">Эффективность</h2>
+                                </div>
+                                <p class="mr">Несмотря на свою низкую цену, композитная арматура
+                                является высокопрочным материалом и обходит по
+                                этому критерию свой металлический аналог, ввиду
+                                того что он не подвержен коррозии. Это значит, что
+                                прочность и износостойкость действительно на высоте.
+                                Вы также не рискуете получить такие проблемы, как
+                                физические повреждения, трещины и разломы, ведь
+                                её составляющие гарантируют высокий уровень
+                                эластичности. Упругость этого материала позволяет
+                                удобно транспортировать его, также его можно
+                                сворачивать .</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-title">
+                                    <img src="./../img/benefits-4.svg" alt="" class="img-fluid">
+                                </div>
+                                <p class="mr">Вы сможете перевезти большее количество материала
+                                за одну транспортировку.
+                                Устойчивость к внешним
+                                воздействиям позволяет устанавливать её при любых
+                                погодных условиях. Учитывая все эти факторы, можно
+                                сделать вывод, что использование стеклопластиковой
+                                арматуры обойдётся в разы дешевле и при этом будет
+                                намного прочнее и эффективнее, чем та же
+                                металлическая арматура.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="watch-video" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-header my-3">Если у вас остались еще вопросы <br>
+                        посмотрите видео</h1>
+                    </div>
+                </div>
+                <div class="row ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cRFfnPZ0pqo" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        @@include('./components/_blog.html')
+
     </main>
-   
-    @@include_once('./components/_footer.html',)
+
+    @@include('./components/_footer.html')
 
     <!-- #region Scripts -->
 
-    <!-- * bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-
-
+    @@include('./components/_global-scripts.html')
 
     <!-- #endregion -->
 </body>

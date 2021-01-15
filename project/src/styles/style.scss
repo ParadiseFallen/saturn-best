@@ -26,6 +26,7 @@ a
     font-size: 24px;
     font-weight: 700;
     transition: color .15s linear, background .15s linear;
+    background: transparent;
     &:hover
     {
         color: #fff;
@@ -114,6 +115,15 @@ header
     }
 }
 
+h1.section-header
+{
+    font-weight: 700;
+    font-size: 40px;
+    @media screen and (max-width :576px) {
+        font-size: 26px !important;
+    }
+}
+
 footer
 {
     *
@@ -143,10 +153,6 @@ footer
             font-size: 36px;
         }
     }
-    .socials
-    {
-
-    }
     .subfooter
     {
         span
@@ -156,4 +162,213 @@ footer
         }
         background: $main-gray;
     }   
+}
+
+#slider
+{
+    margin: -20px;
+    .slider-card
+    {
+        padding: 0 0 30px;
+        margin: 20px;
+        border-bottom: 15px solid $main-red;
+        img
+        {
+            border-radius: 10px;
+            box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.25);
+        }
+        h3
+        {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        p
+        {
+            font-size: 18px;
+        }
+        
+        
+    }
+}
+#blog
+{
+    h1
+    {
+        font-size: 40px;
+    }
+    .controls
+    {
+        a
+        {
+            font-size: 24px;
+            color: $main-gray;
+            font-weight: 700;
+            transition: color .15s linear;
+            line-height: 40px;
+            &:hover
+            {
+                color: $main-red;
+            }
+        }
+        button
+        {
+            outline: none;
+            border: none;
+            background: none;
+            font-size: 24px;
+            transition: color .15s linear;
+            &:hover
+            {
+                color: $main-red;
+            }
+        }
+        .mirror-x
+        {
+            transform: scaleX(-1);
+        }
+    }
+}
+#breadcrums
+{
+    background: $breadcrums-bg;
+    a
+    {
+        color: $breadcrums;
+        margin: 20px 0;
+        font-size: 16px;
+        font-weight: 700;
+        transition: color .15s linear;
+        &:hover
+        {
+            color: $main-red;
+        }
+        &:not(:first-child)
+        {
+            &::before
+            {
+                content: ">";
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+}
+
+.big-red-btn
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    background: $main-red;
+    border-radius: 15px;
+    border: 2px solid $main-red;
+    padding: 10px 0;
+    transition: color .15s linear, background .15s linear;
+    i
+    {
+        font-size: 36px;
+        margin: 0 10px;
+        @media screen and (max-width : 576)
+        {
+            font-size: 18px;
+        }
+    }
+    &:hover
+    {
+        background: transparent;
+        color: $main-red;
+    }
+    @media screen and (max-width : 576){
+        font-size: 18px;
+    }
+}
+#contuct-us
+{
+    background: url('./../img/contuct-us.png') ,$main-red;
+    background-size: cover;
+    form
+    {
+        margin: 40px 0;
+        border-radius: 15px;
+        background: #fff;
+        padding: 30px 20px;
+        h2
+        {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        span
+        {
+            font-size: 18px;
+        }
+        input
+        {
+            border: 2px solid $main-red;
+            border-radius: 10px;
+            padding: 10px 20px;
+            &:focus
+            {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        label
+        {
+            font-size: 18px;
+        }
+    }
+}
+
+#contuct-us-big
+{
+    form
+    {
+        border-radius: 15px;
+        box-shadow: -15px -15px $main-red, 2px 5px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px 20px 0;
+        @media screen and (max-width : 576px) 
+        {
+            padding: 20px;
+        }
+        .textarea
+        {
+            border: 2px solid $main-red;
+            padding: 20px;
+            border-radius: 15px;
+            textarea
+            {
+                position: relative;
+                resize: none;
+                border: none;
+                button
+                {
+                    bottom: 20px;
+                    right: 20px;
+                    position: absolute;
+                }
+                &:focus
+                {
+                    outline: none;
+                }
+            }
+        }
+        input
+        {
+            border: 2px solid $main-red;
+            border-left: none;
+            border-radius: 0 10px 10px 0;
+            padding: 10px 20px;
+            @media screen and (max-width : 576px) 
+            {
+                border: 2px solid $main-red;
+                border-radius: 10px;
+            }
+            &:focus
+            {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+    
+
 }

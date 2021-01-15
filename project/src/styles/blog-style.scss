@@ -1,0 +1,18 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+
+#blog
+{
+    .post-date
+    {
+        color: $main-red;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .blog-text
+    {
+        font-size: 18px;
+    }
+}
+

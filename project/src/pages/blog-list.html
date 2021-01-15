@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Saturn best</title>
+    <!-- * favico -->
+    <link rel="icon" href="./../img/favicon.png" type="image/png">
+    <!-- #region Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="FallenParadise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #endregion -->
+
+    <!-- #region Styles -->
+    @@include('./components/_global-head.html')
+    <link rel="stylesheet" href="./../styles/blog-list-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- #endregion -->
+
+</head>
+
+<body>
+
+    @@include('./components/_header.html')
+
+    <main>
+        @@include('./components/_breadcrums.html')
+
+        <section id="blog-list" class="galery my-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12"><h1 class="section-header">Блог</h1></div>
+                    <div class="col-md-4 offset-md-2 col-12">
+                        <form action="" method="get" class="d-flex">
+                            <input type="text" name="search-text" class="form-control" placeholder="Поиск...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    @@for(let i = 0; i < 8; i++)
+                    {
+                        <div class="blog-card col-12 my-4">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="card-img">
+                                    <img src="./../img/blog-1.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-12 d-flex flex-column card-text my-md-0 my-3">
+                                <h3>Стеклопластиковая арматура</h3>
+                                <p>Несмотря на широкую популярность и востребованность, стеклопластиковая арматура для армирования является всё-таки
+                                инновационным материалом. Поэтому при сборке армирующего каркаса из композитных материалов недопустимо применять
+                                традиционные методы вязки недопустимо применять традиционные методы вязки арматуры с помощью проволоки.</p>
+                                <a href="/blog" class="red-btn my-3">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+                <div class="row ">
+                    <div class="col-12 pagination-controls d-flex justify-content-center">
+                        <a href="#"><i class="fas fa-arrow-left"></i> Предыдущая</a>
+                        <div class="delimeter"></div>
+                        <a href="#">Следующая <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('./components/_footer.html')
+
+    <!-- #region Scripts -->
+
+    @@include('./components/_global-scripts.html')
+
+    <!-- #endregion -->
+</body>
+
+</html>
