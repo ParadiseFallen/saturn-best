@@ -1,0 +1,60 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+
+#first-screen
+{
+    .container
+    {
+        border-right: 4px solid $main-red;
+        background: no-repeat right 50% url('./../img/reinforcement.png');
+        @media screen and (max-width : 768px)
+        {
+            background: none;
+            border-right: 0;
+        }
+    }
+    p
+    {
+        font-size: 18px;
+    }
+}
+#features
+{
+    li::marker
+        {
+            color: $main-red;
+            font-size: 40px;
+            line-height: 20px;
+            // transform: translateY(10px);
+        }
+        li
+        {
+            padding: 20px 0;
+            @media screen and ( max-width : 576px)
+            {
+                padding: 0;
+            }
+            span
+            {
+                transform: translateY(-8px);
+                font-size: 18px;
+                display: flex;
+            }
+        }
+}
+#table-slider
+{
+    button
+    {
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 48px;
+        transition: color .15s linear;
+        &:hover
+        {
+            color: $main-red;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+
+#first-screen
+{
+    p
+    {
+        font-size: 18px;
+    }
+}
+
+#for
+{
+    p
+    {
+        font-size: 18px;
+    }
+    span
+    {
+        font-size: 18px;
+    }
+}
+
+#cards
+{
+    .card-wrap
+    {
+        .card
+        {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.15);
+
+            h4
+            {
+                font-size: 24px;
+                font-weight: 700;
+                padding: 10px 20px;
+                width: fit-content;
+                border-radius: 0 10px 36px 13px;
+            }
+            p
+            {
+                font-size: 18px;
+                padding: 10px;
+            }
+            
+        }
+        &:nth-child(1),
+        &:nth-child(4),
+        &:nth-child(5)
+        {
+            .card
+            {
+                background: $main-red;
+                h4
+                {
+                    color: $main-red;
+                    background: #fff;
+                }
+                p
+                {
+                    color: #fff;
+                }
+            }
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(6)
+        {
+            .card
+            {
+                h4
+                {
+                    color: #fff;
+                    background: $main-red;
+                }
+                p
+                {
+                    color: $main-black;
+                }
+            }
+        }
+    }
+}

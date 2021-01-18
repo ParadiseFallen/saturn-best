@@ -1,0 +1,33 @@
+@import "_variables";
+@import "_extend";
+@import "_mixin";
+
+#price-table
+{
+    .table-img
+    {
+        img
+        {
+            border-radius: 15px;
+        }
+    }
+    .table-price
+    {
+        
+        transform: translateY(-150px);
+        @media screen  and (max-width : 567px){
+            transform: translateY(0px);
+        }
+        .table-header
+        {
+            background: #fff;
+            margin: 0;
+            padding: 20px 30px;
+            border-radius: 15px 15px 0 0;
+            @media screen  and (max-width :567px)
+            {
+                font-size: 16px;
+            }
+        }
+    }
+}
