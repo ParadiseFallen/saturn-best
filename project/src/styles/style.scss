@@ -33,9 +33,9 @@ a
         background: $main-red;
     }
 }
-.modal
+.modal.show
 {
-    // filter: blur();
+    backdrop-filter: blur(5px);
 }
 .modal-content
 {
@@ -43,8 +43,42 @@ a
     border: none;
     form
     {
+        h1
+        {
+            font-size: 26px;
+            @media screen and (max-width : 576px){
+                font-size: 18px;
+            }
+        }
+        padding-top: 20px;
+        input:focus
+        {
+            box-shadow: 0;
+        }
         background: #fff !important;
         border-radius: 15px;
+        .textarea
+        {
+            border: 2px solid $main-red;
+            padding: 20px;
+            border-radius: 15px;
+            textarea
+            {
+                position: relative;
+                resize: none;
+                border: none;
+                button
+                {
+                    bottom: 20px;
+                    right: 20px;
+                    position: absolute;
+                }
+                &:focus
+                {
+                    outline: none;
+                }
+            }
+        }
     }
 }
 header
@@ -196,6 +230,7 @@ footer
 #slider
 {
     margin: -20px;
+    overflow: hidden;
     .slider-card
     {
         padding: 0 0 30px;
