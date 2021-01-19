@@ -1,0 +1,88 @@
+*{-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Montserrat,sans-serif}
+a{text-decoration:none}
+.w-fit-content{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
+.red-btn{padding:10px 30px;border-radius:10px;border:#c62929 3px solid;color:#c62929;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;font-size:24px;font-weight:700;-webkit-transition:color .15s linear,background .15s linear;-o-transition:color .15s linear,background .15s linear;transition:color .15s linear,background .15s linear;background:0 0}
+.red-btn:hover{color:#fff;background:#c62929}
+.modal.show{-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+.modal-content{background:0 0;border:none}
+.modal-content form{padding-top:20px;background:#fff!important;border-radius:15px}
+.modal-content form h1{font-size:26px}
+.modal-content form input:focus{-webkit-box-shadow:0;box-shadow:0}
+.modal-content form .textarea{border:2px solid #c62929;padding:20px;border-radius:15px}
+.modal-content form .textarea textarea{position:relative;resize:none;border:none}
+.modal-content form .textarea textarea button{bottom:20px;right:20px;position:absolute}
+.modal-content form .textarea textarea:focus{outline:0}
+header .phones{font-weight:700;font-size:24px}
+header .phones a{color:#323232}
+header button:focus{outline:0;-webkit-box-shadow:none!important;box-shadow:none!important}
+header .socials .social{border-left:#c62929 1px solid;-webkit-transition:background .3s linear;-o-transition:background .3s linear;transition:background .3s linear}
+header .socials .social i{color:#c62929;font-size:36px;-webkit-transition:color .3s linear;-o-transition:color .3s linear;transition:color .3s linear;padding:0 10px}
+header .socials .social:last-child{border-right:#c62929 1px solid}
+header .socials .social:hover{background:#c62929}
+header .socials .social:hover i{color:#fff}
+header .subheader{background:#c62929}
+header .subheader li{margin-left:10px}
+header .subheader li .socials i{color:#fff}
+header .subheader .nav-link{font-size:24px;font-weight:600;color:#fff!important}
+header .subheader .dropdown-menu .nav-link{color:#323232!important;font-size:24px}
+header .subheader .dropdown-menu hr{background:#c62929;height:2px;opacity:1;margin:0 10px}
+h1.section-header{font-weight:700;font-size:40px}
+footer *{color:#fff;font-size:18px;-webkit-transition:color .3s linear;-o-transition:color .3s linear;transition:color .3s linear}
+footer * a:hover{color:#323232}
+footer * a:hover i{color:#323232}
+footer .main{background:#c62929}
+footer .main .logo{background:#fff;border-radius:0 0 10px 10px}
+footer .main i{font-size:36px}
+footer .subfooter{background:#323232}
+footer .subfooter span{font-weight:400;color:#fff}
+#slider{margin:-20px;overflow:hidden}
+#slider .slider-card{padding:0 0 30px;margin:20px;border-bottom:15px solid #c62929}
+#slider .slider-card img{border-radius:10px;-webkit-box-shadow:0 0 15px 8px rgba(0,0,0,.25);box-shadow:0 0 15px 8px rgba(0,0,0,.25)}
+#slider .slider-card h3{font-weight:700;font-size:24px}
+#slider .slider-card p{font-size:18px}
+#blog h1{font-size:40px}
+#blog .controls a{font-size:24px;color:#323232;font-weight:700;-webkit-transition:color .15s linear;-o-transition:color .15s linear;transition:color .15s linear;line-height:40px}
+#blog .controls a:hover{color:#c62929}
+#blog .controls button{outline:0;border:none;background:0 0;font-size:24px;-webkit-transition:color .15s linear;-o-transition:color .15s linear;transition:color .15s linear}
+#blog .controls button:hover{color:#c62929}
+#blog .controls .mirror-x{-webkit-transform:scaleX(-1);-ms-transform:scaleX(-1);transform:scaleX(-1)}
+#breadcrums{background:#ebebeb}
+#breadcrums a{color:#747474;margin:20px 0;font-size:16px;font-weight:700;-webkit-transition:color .15s linear;-o-transition:color .15s linear;transition:color .15s linear}
+#breadcrums a:hover{color:#c62929}
+#breadcrums a:not(:first-child)::before{content:">";margin:0 20px 0 0}
+.big-red-btn{font-size:24px;font-weight:700;color:#fff;background:#c62929;border-radius:15px;border:2px solid #c62929;padding:10px 0;-webkit-transition:color .15s linear,background .15s linear;-o-transition:color .15s linear,background .15s linear;transition:color .15s linear,background .15s linear}
+.big-red-btn i{font-size:36px;margin:0 10px}
+.big-red-btn:hover{background:0 0;color:#c62929}
+#contuct-us{background:url(../img/contuct-us.png),#c62929;background-size:cover}
+#contuct-us form{margin:40px 0;border-radius:15px;background:#fff;padding:30px 20px}
+#contuct-us form h2{font-size:40px;font-weight:700}
+#contuct-us form span{font-size:18px}
+#contuct-us form input{border:2px solid #c62929;border-radius:10px;padding:10px 20px}
+#contuct-us form input:focus{-webkit-box-shadow:none;box-shadow:none;outline:0}
+#contuct-us form label{font-size:18px}
+.double-shadow-red{-webkit-box-shadow:-15px -15px #c62929,2px 5px rgba(0,0,0,.15);box-shadow:-15px -15px #c62929,2px 5px rgba(0,0,0,.15)}
+#contuct-us-big form{border-radius:15px;color:#fff;padding:20px 20px 20px 0}
+#contuct-us-big form .textarea{border:2px solid #c62929;padding:20px;border-radius:15px}
+#contuct-us-big form .textarea textarea{position:relative;resize:none;border:none}
+#contuct-us-big form .textarea textarea button{bottom:20px;right:20px;position:absolute}
+#contuct-us-big form .textarea textarea:focus{outline:0}
+#contuct-us-big form input{border:2px solid #c62929;border-left:none;border-radius:0 10px 10px 0;padding:10px 20px}
+#contuct-us-big form input:focus{-webkit-box-shadow:none;box-shadow:none;outline:0}
+@media screen and (min-width:992px){
+header .subheader .nav-link:hover{background:#fff!important;color:#c62929!important}
+}
+@media screen and (max-width:900px){
+header .phones{font-size:18px}
+}
+@media screen and (max-width:576px){
+.modal-content form h1{font-size:18px}
+h1.section-header{font-size:26px!important}
+.double-shadow-red-hide{-webkit-box-shadow:none;box-shadow:none}
+#contuct-us-big form{padding:20px}
+#contuct-us-big form input{border:2px solid #c62929;border-radius:10px}
+}
+@media screen and (max-width:576){
+.big-red-btn i{font-size:18px}
+.big-red-btn{font-size:18px}
+}
+/*# sourceMappingURL=style.css.map */

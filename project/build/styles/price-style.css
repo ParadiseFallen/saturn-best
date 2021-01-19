@@ -1,0 +1,8 @@
+#price-table .table-img img{border-radius:15px}
+#price-table .table-price{-webkit-transform:translateY(-150px);-ms-transform:translateY(-150px);transform:translateY(-150px)}
+#price-table .table-price .table-header{background:#fff;margin:0;padding:20px 30px;border-radius:15px 15px 0 0}
+@media screen and (max-width:567px){
+#price-table .table-price{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+#price-table .table-price .table-header{font-size:16px}
+}
+/*# sourceMappingURL=price-style.css.map */
