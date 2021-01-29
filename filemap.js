@@ -1,6 +1,8 @@
 const projectPath = './project'                                 //* path to project  
 const srcFolder = `${projectPath}/src`                          //* src folder
-const buildFolder = `${projectPath}/build`                                                
+// const buildFolder = `${projectPath}/build`                                                
+// C: \Users\Respect\Downloads\openserver\domains
+const buildFolder = `C:/Users/Respect/Downloads/openserver/domains/SaturnBest/`                                                
 
 export default {
     "src": {

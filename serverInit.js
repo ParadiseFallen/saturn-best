@@ -24,14 +24,5 @@ export default () =>
             baseDir : `${fileMap.build.folder}`,
             index : "pages/index.html",
             routes: autoRoutes()
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            //     "/galery": `${fileMap.build.pages}/galery.html`
-            // }
         },
-        // single : true
     })
